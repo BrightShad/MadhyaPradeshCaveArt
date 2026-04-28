@@ -2,10 +2,7 @@ import { jsxs, jsx } from "react/jsx-runtime";
 import { Link } from "@tanstack/react-router";
 function About() {
   return /* @__PURE__ */ jsxs("main", { className: "relative min-h-screen bg-background text-foreground flex flex-col items-center justify-center p-8", children: [
-    /* @__PURE__ */ jsxs("div", { className: "absolute inset-0 -z-10", children: [
-      /* @__PURE__ */ jsx("img", { src: caveBg, alt: "Cave background", className: "h-full w-full object-cover opacity-35" }),
-      /* @__PURE__ */ jsx("div", { className: "absolute inset-0 bg-stone-950/85" })
-    ] }),
+    /* @__PURE__ */ jsx("div", { className: "absolute inset-0 -z-10", children: /* @__PURE__ */ jsx("div", { className: "absolute inset-0 bg-stone-950/85" }) }),
     /* @__PURE__ */ jsxs("div", { className: "max-w-5xl w-full rounded-2xl border border-border/70 bg-card/40 p-6 backdrop-blur-sm md:p-10", children: [
       /* @__PURE__ */ jsx(Link, { to: "/", className: "inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-ochre transition-colors hover:text-ochre/80 mb-12", children: "← Back to Sites" }),
       /* @__PURE__ */ jsx("h1", { className: "font-display text-6xl font-extrabold text-bone mb-8", children: "About Us" }),
