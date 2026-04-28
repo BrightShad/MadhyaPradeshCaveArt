@@ -1,0 +1,12 @@
+import urllib.request
+import re
+url = 'https://docs.google.com/document/d/1Jqsa9LsHKVlM5v7Z1s4TKi18sZ05xmAbebJNehGrYag/export?format=html'
+req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+try:
+    html = urllib.request.urlopen(req).read().decode('utf-8')
+    images = re.findall(r'<img[^>]+src="([^"]+)"', html)
+    print('Found images:', len(images))
+    for i, img in enumerate(images):
+        print(f"[{i}]: {img}")
+except Exception as e:
+    print(e)
