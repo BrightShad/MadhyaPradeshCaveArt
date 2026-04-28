@@ -8,7 +8,6 @@ function About() {
   return (
     <main className="relative min-h-screen bg-background text-foreground flex flex-col items-center justify-center p-8">
       <div className="absolute inset-0 -z-10">
-        <img src={caveBg} alt="Cave background" className="h-full w-full object-cover opacity-35" />
         <div className="absolute inset-0 bg-stone-950/85" />
       </div>
 
